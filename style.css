@@ -1,0 +1,80 @@
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+	margin:0;
+	background: linear-gradient(to right,blue,purple);
+} 
+.todo{
+	width:100%;
+	max-width:375px;
+	background:white;
+	margin:50px auto; 
+	padding:20px;
+	border-radius:10px;
+}
+.todo h1{
+	color:black;
+	display:flex;
+	
+}
+.row{
+	display:flex;
+	align-items:center;   
+	margin-bottom:25px;
+	
+}
+input{
+	flex:1;
+	padding:2px;
+	font-size:15px;
+}
+
+button{
+	margin-left:5px;
+	border:none;
+	background:blue;
+	color:white;
+	width:50px;
+	height:27px;
+	cursor:pointer;
+}
+ul{
+	
+	list-style:none;
+	padding:0;
+}
+ul li{
+	display:flex;
+	flex:1;
+	font-size:17px;
+	padding:10px;
+	margin-bottom:10px;
+}
+ul li:nth-child(odd)
+{
+	background:yellow;
+}
+ul li:nth-child(even)
+{
+	background:orange;
+}
+ul li.checked::before{
+	content:"\2713";
+	margin-right:5px;
+}	
+ul li.checked{
+	display:flex;
+	color:grey;
+	text-decoration:line-through;
+	text-align: center;
+	
+}
+
+ul li span{
+        margin-left:auto;
+	display:flex;
+	cursor:pointer;
+}   
+
